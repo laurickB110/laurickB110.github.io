@@ -1,0 +1,125 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Sider */
+.sider {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    background-color: #251562;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sider-button {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #3c27a5;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.sider-button:hover {
+    background-color: #251562;
+}
+
+/* Contenu principal */
+.content {
+    flex: 1;
+    margin-left: 60px; /* Laisse de l'espace pour le sider */
+    padding: 1rem;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #251562;
+}
+
+.experience-list {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Cartes d'expérience */
+.experience-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px); /* Légère animation au survol */
+}
+
+.experience-card h2 {
+    color: #251562;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience-card p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.experience-card ul {
+    padding-left: 1.5rem;
+}
+
+.experience-card ul li {
+    margin-bottom: 0.5rem;
+    list-style-type: disc;
+}
+
+.experience-card a {
+    color: #3c27a5;
+    text-decoration: none;
+}
+
+.experience-card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #251562;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto; /* Place le footer en bas */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .sider {
+        display: none; /* Cache le sider sur mobile */
+    }
+
+    .experience-list {
+        padding: 1rem;
+    }
+}

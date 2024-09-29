@@ -1,0 +1,112 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    perspective: 1000px;
+    z-index: 2;
+    background: #cc99ff;
+
+}
+
+
+.no_scrollbar::-webkit-scrollbar {
+    display: none;
+}
+main {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../media/purple_one2.png");
+    background-size:  cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Centered text in images */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Cercle flou qui suit la souris */
+#circle1 {
+    margin-top:-100px;
+    margin-left:-100px;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color:#2c0559;
+    border-radius: 50%;
+    filter: blur(30px); /* Applique un effet de flou */
+    transition: transform 0.1s ease;
+    z-index: -1;
+    pointer-events: none;
+}
+.scene {
+    width: 700px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    border-radius: 2em;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 1s;
+}
+
+
+
+.cube__face {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: 'Arial', sans-serif;
+    background: #251562;
+
+}
+
+.cube__face--front  { transform: translateZ(350px); }
+.cube__face--back   { transform: rotateY(180deg) translateZ(350px); }
+.cube__face--right  { transform: rotateY(90deg) translateZ(350px); }
+.cube__face--left   { transform: rotateY(-90deg) translateZ(350px); }
+.cube__face--top    { transform: rotateX(90deg) translateZ(350px); }
+.cube__face--bottom { transform: rotateX(-90deg) translateZ(350px); }
+
+/* Ajustements pour les appareils plus petits */
+@media (max-width: 768px) {
+    .scene {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    .cube__face {
+        width: 400px;
+        height: 400px;
+    }
+    .cube__face--front  { transform: translateZ(200px); }
+    .cube__face--back   { transform: rotateY(180deg) translateZ(200px); }
+    .cube__face--right  { transform: rotateY(90deg) translateZ(200px); }
+    .cube__face--left   { transform: rotateY(-90deg) translateZ(200px); }
+    .cube__face--top    { transform: rotateX(90deg) translateZ(200px); }
+    .cube__face--bottom { transform: rotateX(-90deg) translateZ(200px); }
+
+}
+
+

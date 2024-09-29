@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #251562;
+}
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+textarea {
+    resize: none;
+    height: 150px;
+}
+button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #251562;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3c27a5;
+}
+
+/* Style du lien vers la page principale */
+.back-link {
+    padding: 40px;
+    margin-top: 20px;
+    text-align: center;
+}
+.back-link a {
+    text-decoration: none;
+    color: #251562;
+    font-size: 1rem;
+}
+.back-link a:hover {
+    color: #3c27a5;
+}

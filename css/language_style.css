@@ -1,0 +1,41 @@
+.language-section {
+    background-color: #425865; /* Couleur de fond similaire à l'image */
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
+
+.language-section h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.language span {
+    flex: 1;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.progress-bar {
+    width: 50%;
+    background-color: #e0e0e0; /* Couleur de fond des barres */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 1rem;
+}
+
+.progress {
+    height: 10px;
+    background: linear-gradient(90deg, rgba(96,20,184,1) 0%, rgba(255,26,255,1) 47%, rgba(112,57,134,1) 78%, rgba(25,105,121,1) 100%);
+    border-radius: 10px;
+}
