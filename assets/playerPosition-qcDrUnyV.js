@@ -1,1 +1,0 @@
-import{Dt as e}from"./MergeStatic-CrkTBeQX.js";var t=new e,n={heading:0,speed:0,grounded:!0,lastWallJumpAt:-1/0},r={climb:null};export{r as n,n as r,t};
