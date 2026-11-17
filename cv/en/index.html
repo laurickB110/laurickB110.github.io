@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Laurick Bouquet · Resume and projects</title>
+<meta name="description" content="AI Engineer · Full-stack TypeScript / Python. I build LLM systems that run in production: agent pipelines with automated quality review, local and hosted models, and real platform APIs, …" />
+<link rel="canonical" href="https://laurickb110.github.io/cv/en/" />
+<link rel="alternate" hreflang="en" href="https://laurickb110.github.io/cv/en/" />
+<link rel="alternate" hreflang="fr" href="https://laurickb110.github.io/cv/" />
+<style>
+  :root { --ink:#2a2633; --muted:#6e6878; --accent:#6b5bd6; --paper:#fffaf0; color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.55 system-ui,-apple-system,'Segoe UI',Roboto,sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  nav { display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; font-size:14px; margin-bottom:32px; }
+  a { color: var(--accent); }
+  h1 { margin:0; font-size: clamp(30px, 7vw, 44px); line-height:1.1; }
+  .role { margin:6px 0 16px; font-weight:600; color:var(--muted); }
+  h2 { margin:40px 0 8px; font-size:20px; }
+  h3 { margin:24px 0 4px; font-size:17px; }
+  article p { margin:0; }
+  .links { margin-top:4px; font-size:14px; }
+  .contact { display:flex; gap:16px; flex-wrap:wrap; padding:0; list-style:none; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a href="/" rel="noopener">← Back to the 3D village</a> <a href="/cv/" rel="noopener">Version française</a></nav>
+  <header>
+    <h1>Laurick Bouquet</h1>
+    <p class="role">AI Engineer · Full-stack TypeScript / Python · Paris area, France · fully remote</p>
+    <p>I build LLM systems that run in production: agent pipelines with automated quality review, local and hosted models, and real platform APIs, deployed and scheduled on Linux. I also ship full-stack products from database schema to deployment. On the data side: machine learning on medical imaging, from classical models to CNNs, and big data pipelines in PySpark. MSc Pro student at Epitech (class of 2027), software engineer apprentice since January 2025.</p>
+  </header>
+  <section>
+    <h2>Contact</h2>
+    <ul class="contact"><li><a href="https://www.linkedin.com/in/laurick-bouquet-7b6000268/" rel="noopener">LinkedIn</a></li><li><a href="https://github.com/laurickB110" rel="noopener">GitHub</a></li><li><a href="mailto:laurick00@gmail.com" rel="noopener">laurick00@gmail.com</a></li><li><a href="tel:+33652424431" rel="noopener">+33 6 52 42 44 31</a></li></ul>
+  </section>
+  <section>
+    <h2>Projects</h2>
+      <article>
+        <h3>Automated short-video studio</h3>
+        <p>Publish quality short videos every day on four YouTube and TikTok channels without spending the day on it. The pipeline writes, voices and renders each video on a VPS; an LLM reviews the rendered frames and blocks weak videos before my approval, and yesterday's views tune tomorrow's prompts.</p>
+        
+      </article>
+      <article>
+        <h3>Fofollet</h3>
+        <p>In a building, a reported fault gets lost between tenants, caretaker and manager. Fofollet gives each piece of equipment a QR code: scan it, read its history, report a fault without an account; the manager gets an email and validates it. Live.</p>
+        <p class="links"><a href="https://fofollet.fr" rel="noopener">fofollet.fr</a></p>
+      </article>
+      <article>
+        <h3>reels-vault</h3>
+        <p>Saved Instagram reels pile up and nothing can ever be found again. reels-vault turns them into a searchable Obsidian vault: transcripts, key frames, OCR and structured notes, from local models with no paid API.</p>
+        
+      </article>
+      <article>
+        <h3>paper-desk</h3>
+        <p>Trading simulation on live markets with no real money: does a committee of AI agents (analyst, contrarian, exit planner, chief) make sound calls on highly volatile tokens? Risk rules live in code, not in a prompt. Each experiment's curves are on display inside.</p>
+        
+      </article>
+      <article>
+        <h3>Apprenticeship at Tenexa</h3>
+        <p>My apprenticeship. Tenex Workforce helps companies find available, qualified field technicians; Tenex Eyes lets a remote expert guide a technician through live video. Top contributor on both (React, Node.js, PostgreSQL, Scala, WebRTC). On several projects I was the architect end to end: stack choice, database schemas, containerization, CI, all the way to working staging and production. I also set up part of the team's workflow (GitHub best practices, shared CI scripts) and worked on internal tools: AI-assisted project management, account and sales-opportunity tracking, internal crowdfunding, a technician dashboard.</p>
+        
+      </article>
+      <article>
+        <h3>Plug&amp;Earn</h3>
+        <p>Selling spare bandwidth pays, but takes networking skills few people have. Plug&amp;Earn is a Raspberry Pi box you plug in and it sets itself up: Mysterium Network node, bandwidth limits, mobile UI on the local network.</p>
+        <p class="links"><a href="https://plugnearn.com/" rel="noopener">plugnearn.com</a></p>
+      </article>
+      <article>
+        <h3>BioWatch</h3>
+        <p>Detect and anticipate local ecological tensions before they turn into crises. BioWatch fuses satellite data, open data and AI into an ecological stress score for each map zone (FastAPI, PostGIS, H3, React, Mapbox).</p>
+        <p class="links"><a href="https://github.com/BioWatchOrg/Biowatch-Frontend" rel="noopener">Front-end code (GitHub)</a> · <a href="https://github.com/BioWatchOrg/Biowatch-BackEnd" rel="noopener">Back-end code (GitHub)</a></p>
+      </article>
+      <article>
+        <h3>Pneumonia detection on X-rays</h3>
+        <p>Help screen for pneumonia on chest X-rays, where a missed case costs far more than a false alarm. As a team we compared seven approaches, from classical models (SVM, random forest, XGBoost) to unsupervised learning and CNNs: a fine-tuned ResNet18 reaches up to 93% accuracy and 0.98 AUC on the test set. I wrote the SVM baseline, the experiment tracking shared by every model, and the medical error analysis.</p>
+        
+      </article>
+      <article>
+        <h3>Homepedia</h3>
+        <p>Spot homes sold too high or too cheap for their neighborhood. Homepedia compares each sale (French DVF data) with what it should be worth from local fundamentals, maps the gap and explains it, backtested by training on 2015-2019 and evaluating on 2020-2024. Big data pipeline in PySpark (bronze, silver, gold), PostGIS, MongoDB and Streamlit. In progress, team project.</p>
+        
+      </article>
+      <article>
+        <h3>Crash &amp; Learn</h3>
+        <p>A reinforcement-learning agent that learns to drive in a simulator.</p>
+        
+      </article>
+  </section>
+</main>
+</body>
+</html>
